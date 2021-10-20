@@ -65,7 +65,7 @@ subprojects {
 				beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 				
                 if(githubAutentiaUsername != null && githubAutentiaToken != null) {
-                    repository(url: "https://maven.pkg.github.com/autentia/openid-connect-server-spring-boot") {
+                    repository(url: "https://maven.pkg.github.com/cgmarcos-autentia/openid-connect-server-spring-boot") {
                         authentication(userName: githubAutentiaUsername, password: githubAutentiaToken)
                     }
                 } else {
